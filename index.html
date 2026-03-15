@@ -10,6 +10,8 @@
 
   <title>Street Noise</title>
 
+  <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
 
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
@@ -18,7 +20,14 @@
 
     header h1 { margin: 0; font-size: 2.5rem; }
 
+    .social-icons { display: flex; gap: 1.5rem; list-style: none; padding-left: 0; justify-content: flex-start; }
+    .social-icons li { display: inline-block; }
+    .social-icons a { font-size: 2rem; color: #222; transition: color 0.2s; }
+    .social-icons a:hover { color: #0066cc; }
     section { padding: 2rem; max-width: 800px; margin: auto; }
+
+  <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9h9+8b6Y4l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     h2 { border-bottom: 2px solid #222; padding-bottom: 0.5rem; }
 
@@ -59,24 +68,24 @@
 <section id="music">
 
   <h2>Listen</h2>
-<div class="pt-2">
-   <label for="audio-ruggedroad">Rugged Road</label>
-    <audio id="audio-ruggedroad" controls>
-      <source src="audio/RuggedRoad.mp3" type="audio/mpeg">
-    </audio>
-</div>
-<div class="pt-2"> 
-    <label for="audio-soitslikethat">So It's Like That</label>
-    <audio id="audio-soitslikethat" controls>
-      <source src="audio/SoItsLikeThat.mp3" type="audio/mpeg">
-    </audio>
-</div>    
-<div class="pt-2"> 
-    <label for="audio-headrag">Head Rag</label>
-    <audio id="audio-headrag" controls>
-      <source src="audio/HeadRag.mp3" type="audio/mpeg">
-    </audio>
-</div>
+  <div class="pt-2">
+    <label for="audio-ruggedroad">Rugged Road</label>
+      <audio id="audio-ruggedroad" controls>
+        <source src="audio/RuggedRoad.mp3" type="audio/mpeg">
+      </audio>
+  </div>
+  <div class="pt-2"> 
+      <label for="audio-soitslikethat">So It's Like That</label>
+      <audio id="audio-soitslikethat" controls>
+        <source src="audio/SoItsLikeThat.mp3" type="audio/mpeg">
+      </audio>
+  </div>    
+  <div class="pt-2"> 
+      <label for="audio-headrag">Head Rag</label>
+      <audio id="audio-headrag" controls>
+        <source src="audio/HeadRag.mp3" type="audio/mpeg">
+      </audio>
+  </div>
 </section>
 
 
@@ -106,7 +115,14 @@
 
 </section>
 
-
+<section id="social-media">
+  <h2>Follow Us</h2>
+  <ul class="social-icons">
+    <li><a href="https://youtube.com/@streetnoise-d9g?si=llSpEdJNbZUE1wCi" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+    <li><a href="https://www.facebook.com/profile.php?id=61581080070874" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/streetnoisect" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+</section>
 
 <section id="epk">
 
