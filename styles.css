@@ -1,12 +1,6 @@
-
-
-
 .carousel {
-  width: 600px;     /* try 600px–800px */
-  max-width: 100%;
-  margin: 0 auto;
+  width: min(980px, 100%);
 }
-
 
 .carousel__viewport {
   position: relative;
@@ -35,7 +29,7 @@
 
 .carousel__figure {
   margin: 0;
-  aspect-ratio: 4 / 3;   /* shorter */
+  aspect-ratio: 16 / 9;
   display: grid;
   place-items: center;
   background: #0f1117;

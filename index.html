@@ -12,10 +12,24 @@
 
   <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+   <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9h9+8b6Y4l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   <link rel="stylesheet" href="./styles.css" />
   <style>
 
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
 
     header { background: #222; color: #fff; text-align: center; padding: 2rem; }
 
@@ -27,9 +41,7 @@
     .social-icons a:hover { color: #0066cc; }
     section { padding: 2rem; max-width: 800px; margin: auto; }
 
-  <!-- Font Awesome CDN for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9h9+8b6Y4l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q4l6l1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+ 
     h2 { border-bottom: 2px solid #222; padding-bottom: 0.5rem; }
 
     img { max-width: 100%; height: auto; }
@@ -103,6 +115,7 @@
 
 
     <section class="carousel" aria-label="Band photos">
+       <h2>Band Photos</h2>
       <div class="carousel__viewport" tabindex="0">
         <ul class="carousel__track">
           <!-- Slide 1 -->
