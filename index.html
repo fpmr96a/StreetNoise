@@ -12,6 +12,7 @@
 
   <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
   <style>
 
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
@@ -45,7 +46,7 @@
 
 </head>
 
-
+<script src="./carousel.js" defer></script>
 
 <body>
 
@@ -99,6 +100,83 @@
   
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/W1j9krHCV2k?si=Bh2vuG71UGD0hC1t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Band Site – Photo Carousel</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="carousel" aria-label="Band photos">
+      <div class="carousel__viewport" tabindex="0">
+        <ul class="carousel__track">
+          <!-- Slide 1 -->
+          <li class="carousel__slide is-active" aria-hidden="false">
+            <figure class="carousel__figure">
+              <img
+                src="./images/all1.png"
+                alt="Band performing live under stage lights"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </li>
+
+          <!-- Slide 2 -->
+          <li class="carousel__slide" aria-hidden="true">
+            <figure class="carousel__figure">
+              <img
+                src="./images/albert1.jpg"
+                alt="Close-up of guitarist playing on stage"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </li>
+
+          <!-- Slide 3 -->
+          <li class="carousel__slide" aria-hidden="true">
+            <figure class="carousel__figure">
+              <img
+                src="./images/rich1.png"
+                alt="Band portrait photo"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="carousel__btn" type="button" data-carousel="prev" aria-label="Previous slide">
+          ‹
+        </button>
+
+        <div class="carousel__dots" role="tablist" aria-label="Choose slide">
+          <button class="carousel__dot is-active" type="button" data-carousel="dot" data-index="0" aria-label="Go to slide 1" aria-current="true"></button>
+          <button class="carousel__dot" type="button" data-carousel="dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button class="carousel__dot" type="button" data-carousel="dot" data-index="2" aria-label="Go to slide 3"></button>
+        </div>
+
+        <button class="carousel__btn" type="button" data-carousel="next" aria-label="Next slide">
+          ›
+        </button>
+      </div>
+
+      <!-- Optional: status text for screen readers -->
+      <p class="sr-only" aria-live="polite" aria-atomic="true" id="carouselStatus"></p>
+    </section>
+  </main>
+
+  <script src="./carousel.js" defer></script>
+</body>
+</html>
 
 
 
