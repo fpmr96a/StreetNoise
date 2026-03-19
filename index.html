@@ -8,7 +8,63 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Street Noise</title>
+  <title>Street Noise - Connecticut Blues Rock Band</title>
+
+  <meta name="description" content="Street Noise: Connecticut-based blues-infused rock band delivering raw energy and powerful performances. Listen to our music, watch live videos, and check upcoming shows.">
+  <meta name="keywords" content="Street Noise, blues rock, Connecticut band, rock music, live performances, blues-infused rock">
+  <meta name="author" content="Street Noise">
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="Street Noise - Blues-Infused Rock Band">
+  <meta property="og:description" content="Connecticut-based band delivering raw energy and powerful blues-rock music.">
+  <meta property="og:image" content="https://streetnoisect.com/images/Logo.jpg">
+  <meta property="og:url" content="https://streetnoisect.com">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Street Noise - Blues-Infused Rock Band">
+  <meta name="twitter:description" content="Connecticut-based band delivering raw energy and powerful blues-rock music.">
+  <meta name="twitter:image" content="https://streetnoisect.com/images/Logo.jpg">
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Street Noise",
+    "description": "Connecticut-based blues-infused rock band delivering raw energy and powerful performances.",
+    "genre": ["Blues", "Rock"],
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "CT",
+        "addressCountry": "US"
+      }
+    },
+    "sameAs": [
+      "https://youtube.com/@streetnoise-d9g",
+      "https://www.facebook.com/profile.php?id=61581080070874",
+      "https://www.instagram.com/streetnoisect"
+    ],
+    "album": [
+      {
+        "@type": "MusicRecording",
+        "name": "Rugged Road",
+        "url": "https://streetnoisect.com/audio/RuggedRoad.mp3"
+      },
+      {
+        "@type": "MusicRecording",
+        "name": "So It's Like That",
+        "url": "https://streetnoisect.com/audio/SoItsLikeThat.mp3"
+      },
+      {
+        "@type": "MusicRecording",
+        "name": "Head Rag",
+        "url": "https://streetnoisect.com/audio/HeadRag.mp3"
+      }
+    ]
+  }
+  </script>
 
   <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -61,8 +117,7 @@
 <script src="./carousel.js" defer></script>
 
 <body>
-
-
+<main>
 
 <section id="bio">
 
@@ -269,17 +324,33 @@
       <!-- Optional: status text for screen readers -->
       <p class="sr-only" aria-live="polite" aria-atomic="true" id="carouselStatus"></p>
     </section>
-  </main>
-
-  <script src="./carousel.js" defer></script>
-</body>
-</html>
-
-
 
 <section id="shows">
 
   <h2>Upcoming Shows</h2>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Street Noise Live Performance",
+    "startDate": "2026-05-23",
+    "location": {
+      "@type": "Place",
+      "name": "Flathead Farm",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lebanon",
+        "addressRegion": "CT",
+        "addressCountry": "US"
+      }
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Street Noise"
+    }
+  }
+  </script>
 
   <ul>
 
@@ -298,7 +369,6 @@
     <li><a href="https://www.instagram.com/streetnoisect" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
   </ul>
 </section>
-
 
 <section id="epk">
 
@@ -325,6 +395,11 @@
   <p>&copy; 2026 Street Noise Band | All Rights Reserved</p>
 
 </footer>
+  </main>
+
+  <script src="./carousel.js" defer></script>
+</body>
+</html>
 
 
 
