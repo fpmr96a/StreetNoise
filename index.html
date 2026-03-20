@@ -110,6 +110,12 @@
 
     a { color: #0066cc; text-decoration: none; }
 
+    .navbar { background: #222; padding: 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .nav-links { display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; justify-content: center; gap: 0; }
+    .nav-links li { display: inline-block; margin: 0; }
+    .nav-links a { display: block; color: #fff; padding: 1rem 1.2rem; transition: background-color 0.3s, color 0.3s; }
+    .nav-links a:hover { background-color: #0066cc; color: #fff; }
+
   </style>
 
 </head>
@@ -118,6 +124,18 @@
 
 <body>
 <main>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#bio">About</a></li>
+    <li><a href="#music">Listen</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#shows">Shows</a></li>
+    <li><a href="#social-media">Follow</a></li>
+    <li><a href="#epk">EPK</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <section id="bio">
 
@@ -169,7 +187,7 @@
 </section>
 
 
-    <section class="carousel" aria-label="Band photos">
+    <section id="photos" class="carousel" aria-label="Band photos">
        <h2>Band Photos</h2>
       <div class="carousel__viewport" tabindex="0">
         <ul class="carousel__track">
