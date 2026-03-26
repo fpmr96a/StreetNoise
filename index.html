@@ -141,6 +141,10 @@
       border: 1px solid #e3e3e1;
       border-radius: 10px;
       padding: 0.88rem 0.92rem;
+      display: grid;
+      grid-template-columns: minmax(130px, 155px) 1fr;
+      gap: 0.9rem;
+      align-items: start;
       line-height: 1.45;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -160,10 +164,23 @@
       text-decoration: underline;
     }
 
-    #shows li::before {
-      content: "\2013";
-      margin-right: 0.24rem;
-      color: #b1b1af;
+    #shows .show-date {
+      color: #4a4a46;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    #shows .show-details {
+      display: grid;
+      gap: 0.2rem;
+      min-width: 0;
+    }
+
+    #shows .show-location {
+      color: #66665f;
+      font-size: 0.96rem;
     }
 
     @media (max-width: 700px) {
@@ -178,6 +195,12 @@
 
       #shows li {
         padding: 0.78rem;
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      #shows .show-date {
+        font-size: 0.88rem;
       }
     }
 
@@ -471,8 +494,20 @@
     </script>
 
     <ul>
-      <li>May 23, 2026 – <a href="./images/WoundedWarriors.png" target="_blank">Wounded Warriors Benefit</a>, Lebanon, CT</li>
-      <li>July 18, 2026 – <a href="https://www.monalisarestaurant.net/" target="_blank">Mona Lisa Restaurant</a>, Wolcott, CT</li>
+      <li>
+        <span class="show-date">May 23, 2026</span>
+        <div class="show-details">
+          <a href="./images/WoundedWarriors.png" target="_blank">Wounded Warriors Benefit</a>
+          <span class="show-location">Lebanon, CT</span>
+        </div>
+      </li>
+      <li>
+        <span class="show-date">July 18, 2026</span>
+        <div class="show-details">
+          <a href="https://www.monalisarestaurant.net/" target="_blank">Mona Lisa Restaurant</a>
+          <span class="show-location">Wolcott, CT</span>
+        </div>
+      </li>
     </ul>
   </div>
 
