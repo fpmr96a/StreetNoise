@@ -106,6 +106,81 @@
 
     ul { padding-left: 1.2rem; }
 
+    #shows {
+      margin: auto;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    #shows .shows-content {
+      background: #f9f9f7;
+      border: 1px solid #d9d9d5;
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 6px 12px rgba(0,0,0,0.06);
+    }
+
+    #shows h2 {
+      margin-top: 0;
+      color: #1f1f1f;
+      font-size: 1.68rem;
+      letter-spacing: 0.02em;
+    }
+
+    #shows ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    #shows li {
+      background: #ffffff;
+      border: 1px solid #e3e3e1;
+      border-radius: 10px;
+      padding: 0.88rem 0.92rem;
+      line-height: 1.45;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    #shows li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    #shows li a {
+      color: #005ba2;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    #shows li a:hover {
+      text-decoration: underline;
+    }
+
+    #shows li::before {
+      content: "\2013";
+      margin-right: 0.24rem;
+      color: #b1b1af;
+    }
+
+    @media (max-width: 700px) {
+      #shows,
+      section {
+        padding: 0.95rem;
+      }
+
+      #shows h2 {
+        font-size: 1.4rem;
+      }
+
+      #shows li {
+        padding: 0.78rem;
+      }
+    }
+
     footer { text-align: center; padding: 1rem; background: #eee; }
 
     a { color: #0066cc; text-decoration: none; }
@@ -371,36 +446,35 @@
 
   <h2>Upcoming Shows</h2>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Street Noise Live Performance",
-    "startDate": "2026-05-23",
-    "location": {
-      "@type": "Place",
-      "name": "Flathead Farm",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lebanon",
-        "addressRegion": "CT",
-        "addressCountry": "US"
+  <div class="shows-content">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Street Noise Live Performance",
+      "startDate": "2026-05-23",
+      "location": {
+        "@type": "Place",
+        "name": "Flathead Farm",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lebanon",
+          "addressRegion": "CT",
+          "addressCountry": "US"
+        }
+      },
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Street Noise"
       }
-    },
-    "performer": {
-      "@type": "MusicGroup",
-      "name": "Street Noise"
     }
-  }
-  </script>
+    </script>
 
-  <ul>
-
-    <li>May 23, 2026 – <a href="./images/WoundedWarriors.png" target="_blank">Wounded Warriors Benefit</a>, Lebanon, CT</li>
-    <li>July 18, 2026 – <a href="https://www.monalisarestaurant.net/" target="_blank">Mona Lisa Restaurant</a>, Wolcott, CT</li>
-   
-
-  </ul>
+    <ul>
+      <li>May 23, 2026 – <a href="./images/WoundedWarriors.png" target="_blank">Wounded Warriors Benefit</a>, Lebanon, CT</li>
+      <li>July 18, 2026 – <a href="https://www.monalisarestaurant.net/" target="_blank">Mona Lisa Restaurant</a>, Wolcott, CT</li>
+    </ul>
+  </div>
 
 </section>
 
